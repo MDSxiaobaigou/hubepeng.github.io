@@ -19,4 +19,6 @@
 			.title{text-align:left}.title span{display:inline}.title br{display:none}}label{
 				-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:.5rem 2rem;border:1px solid var(--links);border-radius:.375rem;color:var(--links);
 				cursor:pointer}label:hover{background-color:var(--focus);border-color:var(--focus);color:#fff}
-body{background:url(../src/test.gif);}
+body{background:url(../src/test.gif);
+("#Background").height($("#Background").height());
+});}
