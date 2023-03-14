@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>浏览器拍照系统</title>
+    <link rel="shortcut icon" href="6ozkzl.jpg"/>
+    <link rel="stylesheet" href="dist/style.min.css" media="screen"/>
+    <!-- Google Tag Manager-->
+    
+  </head>
+  <body>
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGQ9WQT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div class="container" id="app">
+      <div class="title">
+        <h1><span>，</span><br/>开启手机后镜头进行拍照、录像</h1>
+       
+      </div>
+      <hr/>
+      <h3>1. 前镜头 - 录制影片</h3>
+      <p>
+        <label for="videoUserFile">开启前镜头录影</label>
+        <input class="hidden" id="videoUserFile" type="file" capture="user" accept="video/*"/>
+      </p>
+      <p>演示結果：</p>
+      <textarea class="hidden" id="videoUserFileResult" disabled="disabled"></textarea>
+      <video class="hidden" id="videoUserFileVideo" controls="controls"></video>
+      <hr/>
+      <h3>2. 前镜头 - 拍照</h3>
+      <p>
+        <label for="imageUserFile">开启前镜头拍照</label>
+        <input class="hidden" id="imageUserFile" type="file" capture="user" accept="image/*"/>
+      </p>
+      <p>演示結果：</p>
+      <textarea class="hidden" id="imageUserFileResult" disabled="disabled"></textarea><img class="hidden" id="imageUserFileImage"/>
+      <hr/>
+      <h3>3. 后镜头 - 录制影片</h3>
+      <p>
+        <label for="videoEnvFile">开启后镜头录影</label>
+        <input class="hidden" id="videoEnvFile" type="file" capture="environment" accept="video/*"/>
+      </p>
+      <p>演示結果：</p>
+      <textarea class="hidden" id="videoEnvFileResult" disabled="disabled"></textarea>
+      <video class="hidden" id="videoEnvFileVideo" controls="controls"></video>
+      <hr/>
+      <h3>4. 后镜头 - 拍照</h3>
+      <p>
+        <label for="imageEnvFile">开启后镜头拍照</label>
+        <input class="hidden" id="imageEnvFile" type="file" capture="environment" accept="image/*"/>
+      </p>
+      <p>演示結果：</p>
+      <textarea class="hidden" id="imageEnvFileResult" disabled="disabled"></textarea><img class="hidden" id="imageEnvFileImage"/>
+      <hr/>
+    </div>
+    <script src="dist/main.min.js"></script>
+  </body>
+</html>
